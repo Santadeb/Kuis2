@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#FFFFFF"> <!-- Background putih untuk keseluruhan -->
+
+    <!-- CardView untuk Tanggal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="12dp"
+        android:background="#E0E0E0"> <!-- Latar belakang abu-abu lembut -->
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/10/2024"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="10dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Layout untuk Informasi Lain -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- CardView untuk Jumlah (Rp) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#AA83EF"> <!-- Background ungu -->
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 5484"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView untuk Keterangan -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#F1F8E9"> <!-- Background hijau lembut -->
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jajan"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
